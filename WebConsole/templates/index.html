@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Executar Comando Remoto</title>
+</head>
+<body>
+    <form action="/executar_comando" method="post">
+        <input type="text" name="comando" placeholder="Digite um comando">
+        <button type="submit">Enviar Comando</button>
+    </form>
+    
+    <!-- Div para exibir o resultado -->
+    <div id="resultado">
+        {% if resultado %}
+        <pre>{{ resultado }}</pre>
+        {% endif %}
+    </div>
+</body>
+</html>
